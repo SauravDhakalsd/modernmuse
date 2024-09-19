@@ -8,3 +8,5 @@ npm run dev //to run the app
 node
 mongodb
 //change .env file's mongo db url to your url
+also install nodemon globally
+npm i nodemon -g
