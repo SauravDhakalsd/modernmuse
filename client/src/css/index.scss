@@ -1,0 +1,50 @@
+@import "./variables";
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body,#root{
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+}
+#root{
+    @include flexing(column,flex-start,1em);
+    padding-top:10%;
+    overflow-y: auto;
+}
+.alert{
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    border:2px solid var(--c);
+    color:white;
+    max-width: 60vw;
+    padding:0.5em 1em;
+    background-color: var(--c);
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 7px 2px rgba(0, 0, 0, 0.386),
+    5px 5px 7px 2px inset rgba(0, 0, 0, 0.372);
+    text-transform: capitalize;
+  }
+.container{
+    width:80vw;
+    position: relative;
+    height: fit-content;
+    min-height: 80vh;
+    @include flexing(row,flex-start,3em);
+    flex-wrap: wrap;
+    h1{
+        position: absolute;
+        top:0;
+    }
+    margin-bottom: 10px;
+}

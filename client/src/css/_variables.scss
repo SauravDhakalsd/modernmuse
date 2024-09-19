@@ -1,0 +1,11 @@
+$textColor:black;
+$primaryBg: white;
+$secondaryBg:lightblue;
+$BtnBg: green;
+@mixin flexing($dir,$jc,$gap){
+    display:flex;
+    flex-direction:$dir;
+    justify-content:$jc;
+    align-items: center;
+    gap:$gap;
+}
